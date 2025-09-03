@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Work</title>
+    <style>
+        .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 2px;
+        padding: 10px;
+        width: 100%;
+        justify-content: center;
+      }
+
+      .grid-item {
+        background: linear-gradient(to right, #cfc8c5, #e9dfdf);
+        color: black;
+        padding: 3px;
+        text-align: center;
+        border-radius: 20px;
+      }
+
+      h1{
+        font-size: 28px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .journey{
+        display: flex;
+        gap: 10px;
+        padding: 40px;
+        justify-content: space-between;
+        width: 80%;
+        background-color: linear-gradient(to right, #fababa 1px, transparent 1px),
+                         linear-gradient(to bottom, #e6edf5 1px, transparent 1px);
+      }
+
+      .testimony {
+        display: grid;
+      }
+
+      .step{
+        text-align: center;
+        max-width: 160px;
+      }
+
+      .number{
+        width: 18px;
+        height: 18px;
+        border: 2px solid #3333;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        border-radius: 4px;
+      }
+
+      .arrow{
+        font-size: 22px;
+        color: #ff7f50;
+      }
+
+      .p{
+        font-size: 14px;
+        color: #333;
+      }
+
+      .membership-plans{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin: 40px auto;
+        max-width: 900px;
+      }
+
+      .plan{
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 20px;
+        flex: 1;
+        background: linear-gradient(to bottom right, #ffffea, #f7fcbc);
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+      }
+
+      .plan h3{
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+
+      .plan p.price{
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+
+      .plan ul{
+        list-style: none;
+        padding: 0;
+        margin: 15px 0;
+        text-align: left;
+      }
+
+      .btn{
+        display: inline-block;
+        margin-top: 15px;
+        padding: 10px 20px;
+        border: 1px solid #333;
+        border-radius: 6px;
+        font-weight: bold;
+        color: #333;
+        background: #fff;
+        text-decoration: none;
+      }
+
+      .btn:hover{
+        background: #333;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      .hmembership{
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        text-align: center;
+      }
+
+      .tech{
+        margin: 60px auto;
+        max-width: 600px;
+        font-size: 16px;
+        line-height: 1.6;
+      }
+
+      .tech p{
+        font-size: 32px;
+      }
+
+      .tech .phem{
+        font-size: 20px;
+      }
+
+      .stars{
+        color: orange;
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+
+      .debug{
+        background: #0d1b2a;
+        color: #fff;
+        padding: 50px 20px;
+        border-radius: 8px 8px 0 0;
+        text-align: center;
+      }
+
+      .debug h2{
+        margin-bottom: 20px;
+        font-size: 24px;
+      }
+
+      .debug .btn{
+        background: #fff;
+        color: #0d1b2a;
+        border: none;
+      }
+
+      .debug .btn:hover{
+        background: #ff7f50;
+        color: #fff;
+      }
+
+      .footer{
+        font-size: 12px;
+        color: #555;
+        padding: 20px;
+      }
+    </style>
+</head>
+<body>
+     <div class="grid-container">
+        <div class="grid-item"><h1>Join the <br> Ultimate tech <br> book club</h1>
+            <p>Turn your reading time into learning time with fellow tech enthusiasts. Get curated recommendations, join vibrant discussions and level up your skills one chapter at a time.</p><br>
+            <a href="#" class="btn">REVIEW MEMBERSHIP OPTIONS</a>
+          </div>
+
+        <div class="grid-item"><img src="/df30fb0b80841eadbb0a82032cab29f4.jpg" alt="2ndpic"></div>
+
+        <div class="grid-item"><img src="/df30fb0b80841eadbb0a82032cab29f4.jpg" alt="2ndpic"></div>
+
+        <div class="grid-item"><h1><strong>Read together, <br> Grow together</strong></h1>
+        <ul>
+          <li>Monthly curated tech reads selected by industry experts</li><br>
+          <li>Virtual and in person meetups</li><br>
+          <li>Early access to new tech book release</li><br>
+          <li>Author Q&A sessions with tech thought leaders</li>
+        </ul>
+      </div>
+
+        <div class="grid-item"><h1>Not your average <br> book club</h1>
+          <p>Connect with a community that speaks your language from <strong>Python</strong> to <strong>Typescript</strong> and everything between. Our discussions blend technical depth with practical application</p></div>
+
+        <div class="grid-item"><img src="/df30fb0b80841eadbb0a82032cab29f4.jpg" alt="3rdpic"></div>
+   </div><br><br>
+
+
+    <div class="testimony">
+      <h1>Your tech <br> Reading journey</h1>
+
+      <div class="journey">
+        <div class="step">
+            <div class="number">1</div>
+            <p>Choose your <br> membership tier</p>
+        </div>
+
+        <div class="arrow">>>>>></div>
+        <div class="step">
+          <div class="number">2</div>
+          <p>Get your monthly <br> book collection</p>
+        </div>
+
+        <div class="arrow">>>>>></div>
+        <div class="step">
+          <div class="number">3</div>
+          <p>Join our <br> discussions Forums</p>
+        </div>
+
+        <div class="arrow">>>>>></div>
+        <div class="step">
+        <div class="number">4</div>
+        <p>Attend exclusive<br> Meetups</p>
+      </div>
+    </div>
+
+    <h2 class="hmembership">Membership options</h2>
+
+    <div class="membership-plans">
+      <div class="plan">
+          <h3>starter</h3>
+          <p class="price">$19/month</p><hr>
+          <ul>
+            <li>1 book/month</li>
+            <li>Online forums</li>
+          </ul>
+          <a href="#" class="btn">Subscribe Now</a>
+      </div>
+
+      <div class="plan">
+        <h3>Pro</h3>
+        <p class="price">$29 /month</p><hr>
+        <ul>
+          <li>2 books/month</li>
+          <li>Forum access</li>
+          <li>Video meetups</li>
+        </ul>
+        <a href="#" class="btn">Subscribe Now</a>
+      </div>
+
+      <div class="plan">
+        <h3>Enterprise</h3>
+        <p class="price">Custom</p><hr>
+        <ul>
+          <li>Team access</li>
+          <li>Private sessions</li>
+        </ul>
+         <a href="#" class="btn">Talk to Us</a>
+      </div>
+     </div>
+
+      <div class="tech">
+        <div class="stars"><strong><h1>******</h1></strong></div>
+        <p><strong>"This book club transformed my technical reading from a solitary activity into an enriching community experience. The discussion are gold!"</strong></p>
+        <p class="phem"><em>- Scott Chen, Software Architect</em></p>
+      </div> 
+
+      <div class="debug">
+        <h2>Ready to debug your reading list</h2>
+        <a href="#" class="btn">Choose Membership Options</a>
+      </div>
+
+
+
+      <footer>
+
+        @ 2025 | Your Book club
+
+      </footer>
+  </div>
+
+
+
+</body>
+</html>
